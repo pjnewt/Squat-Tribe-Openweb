@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squat Tribe</title>
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#0A0A0A">
+    <link rel="stylesheet" href="styles.v1.6.9.css">
+</head>
+<body>
+    <div id="app">
+        <div class="screen">
+            <div class="card">
+                <div class="title">Squat Tribe</div>
+                <p class="subtitle">Adaptive squat training using the Pentagon Protocol</p>
+            </div>
+            
+            <div class="grid two">
+                <div class="kpi">
+                    <div class="label">Total Reps</div>
+                    <div class="value" id="totalReps">0</div>
+                </div>
+                <div class="kpi">
+                    <div class="label">Effective Load</div>
+                    <div class="value" id="effectiveLoad">0 kg</div>
+                </div>
+                <div class="kpi">
+                    <div class="label">Density Score</div>
+                    <div class="value" id="densityScore">0</div>
+                </div>
+                <div class="kpi">
+                    <div class="label">Symmetry</div>
+                    <div class="value" id="symmetry">0%</div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="title">Current Exercise</div>
+                <div class="exercise-card">
+                    <img src="back.png" alt="Back Squat">
+                    <div>
+                        <div class="exercise-name">Back Squat</div>
+                        <div class="exercise-meta">Bilateral • 0.70 coefficient</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="title">Workout Progress</div>
+                <div class="progress-list">
+                    <div class="progress-item">
+                        <span>Anchor Set</span>
+                        <span>0 reps</span>
+                    </div>
+                    <div class="progress-item">
+                        <span>Myo-Rep Clusters</span>
+                        <span>0 sets</span>
+                    </div>
+                    <div class="progress-item">
+                        <span>Unilateral</span>
+                        <span>0/0 reps</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="btn primary" id="startWorkout">Start Workout</button>
+            <button class="btn secondary" id="logSession">Log Session</button>
+        </div>
+    </div>
+
+    <script src="app.v1.6.9.js"></script>
+</body>
+</html>
